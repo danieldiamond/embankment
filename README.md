@@ -36,19 +36,21 @@ The domain is bounded and at each boundary there are potential effects of the bo
 
 - At the other boundaries, a finite difference expression must be constructed by combining the governing equation with another equation stating that the gradient in <img src="https://latex.codecogs.com/gif.latex?$$H$$"> normal to the boundary is zero. We need four expressions for the left, right, upper (that is, beneath the embankment) and lower boundaries which are respectively:
 <p align="center">
+
 <img src="https://latex.codecogs.com/gif.latex?$$−-2(h^2+k^2)H_{i,j}+2k^2&space;H_{i+1,j}+h^2&space;H_{i,j-1}+h^2&space;H_{i,j+1}=0$$">
-
+<br />
 <img src="https://latex.codecogs.com/gif.latex?$$−-2(h^2+k^2)H_{i,j}+2k^2&space;H_{i-1,j}+h^2&space;H_{i,j-1}+h^2&space;H_{i,j+1}=0$$">
-
+<br />
 <img src="https://latex.codecogs.com/gif.latex?$$-−2(h^2+k^2)H_{i,j}+k^2&space;H_{i-1,j}+k^2&space;H_{i+1,j}+2h^2&space;H_{i,j-1}=0$$">
-
+<br />
 <img src="https://latex.codecogs.com/gif.latex?$$−-2(h^2+k^2)H_{i,j}+k^2&space;H_{i-1,j}+k^2&space;H_{i+1,j}+2h^2&space;H_{i,j+1}=0$$">
+
 </p>
 
 - There are two special boundary condition points: the lower left grid point and the lower right grid point. The applicable boundary conditions at these are respectively: 
 <p align="center">
 <img src="https://latex.codecogs.com/gif.latex?$$-−2(h^2+k^2)H_{i,j}+2k^2&space;H_{i+1,j}+2h^2&space;H_{i,j+1}=0$$">
-
+<br />
 <img src="https://latex.codecogs.com/gif.latex?$$−-2(h^2+k^2)H_{i,j}+2k^2&space;H_{i-1,j}+2h^2&space;H_{i,j+1}=0$$">
 </p>
 
@@ -68,7 +70,7 @@ Thus in order to solve for <img src="https://latex.codecogs.com/gif.latex?$$\hat
 Once <img src="https://latex.codecogs.com/gif.latex?$$\hat&space;H$$">is solved, the velocity components can be computed using 2nd order finite differences again as:
 <p align="center">
 <img src="https://latex.codecogs.com/gif.latex?$$u=-K&space;\frac{\partial^2&space;H}{\partial&space;x^2}=\frac{H_{i-1,j}+H_{i+1,j}}{2h}$$">
-
+<br />
 <img src="https://latex.codecogs.com/gif.latex?$$v=-K&space;\frac{\partial^2&space;H}{\partial&space;y^2}=\frac{H_{i,j-1}+H_{i,j+1}}{2k}$$">
 </p>
 
