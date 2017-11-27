@@ -17,6 +17,7 @@ Laplace equation is used to represent the physical process through the embankmen
 <p align="center">
   <img src="https://latex.codecogs.com/gif.latex?$$\nabla^2&space;H=\frac{\partial^2&space;H}{\partial&space;x^2}+\frac{\partial^2&space;H}{\partial&space;y^2}$$">
 </p>
+
 ### 3. Numerical Representation of Governing Equations
 Using partial derivatives that are accurate to second order in the mesh spacing. The 2nd order finite difference equation is:
 <p align="center">
