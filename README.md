@@ -2,7 +2,7 @@
 A numerical approach to determining the flow beneath an embankment.
 
 <p align="center">
-  <img src="https://github.com/danieldiamond/embankment/blob/master/embankment_diagram.jpg">
+  <img src="./images/embankment_diagram.jpg">
   Figure 1. Cross-section through a conceptual embankment overlying a permeable stratum.
 </p>
 
@@ -29,7 +29,7 @@ where <img src="https://latex.codecogs.com/gif.latex?$H_{i,j}$">  is the head at
 ### 4. Boundary Conditions
 The domain is bounded and at each boundary there are potential effects of the boundary on the interior of the domain. The mesh must be constructed so that all boundary points coincide with the boundary of the mesh. An equation must be specified at every boundary point.
 
-- At the inflow and outflow boundaries, the equation is trivial and the value of <img src="https://latex.codecogs.com/gif.latex?$H_{i,j}$">  at these point is simply the total head. For example, at each inflow point: 
+- At the inflow and outflow boundaries, the equation is trivial and the value of <img src="https://latex.codecogs.com/gif.latex?$H_{i,j}$">  at these point is simply the total head. For example, at each inflow point:
 <p align="center">
 <img src="https://latex.codecogs.com/gif.latex?$$H_{i,j}=h_1$$">
 </p>
@@ -47,7 +47,7 @@ The domain is bounded and at each boundary there are potential effects of the bo
 
 </p>
 
-- There are two special boundary condition points: the lower left grid point and the lower right grid point. The applicable boundary conditions at these are respectively: 
+- There are two special boundary condition points: the lower left grid point and the lower right grid point. The applicable boundary conditions at these are respectively:
 <p align="center">
 <img src="https://latex.codecogs.com/gif.latex?$$-−2(h^2+k^2)H_{i,j}+2k^2&space;H_{i+1,j}+2h^2&space;H_{i,j+1}=0$$">
 <br />
@@ -79,7 +79,7 @@ The total volume flux of water beneath the embankment can be determined by integ
 <img src="https://latex.codecogs.com/gif.latex?$$q=\oint&space;\vec{u}&space;\cdot&space;\hat&space;n&space;\partial&space;A$$">
 </p>
 
-<img src="https://latex.codecogs.com/gif.latex?$$u$$"> is the velocity vector at the defined surface, <img src="https://latex.codecogs.com/gif.latex?$$\hat&space;n$$"> is the local unit normal vector of the defined surface and <img src="https://latex.codecogs.com/gif.latex?$\partial&space;$$A$$"> is an elemental area of the defined surface. 
+<img src="https://latex.codecogs.com/gif.latex?$$u$$"> is the velocity vector at the defined surface, <img src="https://latex.codecogs.com/gif.latex?$$\hat&space;n$$"> is the local unit normal vector of the defined surface and <img src="https://latex.codecogs.com/gif.latex?$\partial&space;$$A$$"> is an elemental area of the defined surface.
 
 The surface beneath the center of the embankment is therefore planar and of unit thickness, thus the above equation reduces to:
 <p align="center">
